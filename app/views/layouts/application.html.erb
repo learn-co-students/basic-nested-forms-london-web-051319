@@ -8,7 +8,23 @@
 </head>
 <body>
 
-<%= yield %>
+   <div class="wrapper">
+         <header class="page_header">
+            <div class="nav_bar">
+               <%= link_to 'Home', home_path %> &emsp;
+               <%= link_to 'All People', people_path %>  &emsp;
+               <%= link_to 'Add Person', new_person_path(@person) %>  &emsp;
+
+            </div>
+
+            <div class="head_logo">
+               <img class="logo" src="/assets/Flatiron-School-Logo.png" alt="The FlatIron school logo.">
+            </div>
+         </header>
+      <hr>
+      <div class="body_content">
+         <%= yield %>
+      </div>
 
 </body>
 </html>
